@@ -1,0 +1,164 @@
+@use 'variables'
+
+*
+    padding: 0
+    margin: 0
+    font-size: 10px
+    font-family: variables.$font
+
+header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 10px 30px
+    
+    
+    .logo-div img
+        height: 60px
+    .h-btn-div button
+        background-color: variables.$primary
+        border: none
+        padding: 10px 10px
+        border-radius: 9px
+        cursor: pointer
+        box-shadow: 0 0 12px 2px #00000025
+        transition: all 200ms ease-in
+
+        ion-icon
+            color: #fff
+            font-size: 3.2rem
+        
+        &:hover
+            transform: scale(1.06)
+            box-shadow: 0 0 18px 2px #00000025
+
+
+.main-area
+    display: flex
+    
+    .menu-bar
+        width: 80px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-right: 1px solid #00000020
+        height: 86vh
+        position: fixed
+        flex: 0 1 auto
+        
+
+        ul 
+            list-style: none
+            display: flex
+            flex-direction: column
+            transform: translateY(-10%)
+            gap: 4rem
+
+            li ion-icon
+                font-size: 2.3rem
+                display: flex
+                
+        .inf
+            position: absolute
+            bottom: 2rem
+            border: none
+            border-radius: 50%
+            background-color: variables.$primary
+            width: 35px
+            height: 35px
+            display: flex
+            align-items: center
+            justify-content: center
+
+            ion-icon
+                font-size: 2.4rem
+                
+                color: #fff
+    
+    .content-div
+        width: calc(100% - 80px)
+        margin-left: 80px
+        
+        scroll: auto
+        
+        .main-headline
+            margin-left: 16rem
+            padding-top: 8rem
+            position: fixed
+            h1
+                font-size: 4.8rem
+                letter-spacing: .2rem
+                margin-bottom: 2rem
+                position: relative
+            
+            p 
+                font-size: 1.8rem
+                line-height: 2.4rem
+
+
+.crypto-coins
+    width: 200px
+    position: fixed
+    top: 18%
+    left: 48%
+.crypto-3d
+    height: 46rem
+    position: absolute
+    right: 11rem
+    top: 2.6rem
+    z-index: 1001
+
+.table-div
+    background-color: variables.$bar
+    border-radius: 22px
+    height: 1200px
+    z-index: 1000
+    position: relative
+    margin-top: 36rem
+    
+    .t-heading
+        padding: 12px 24px
+
+    .table-heading-name
+        width: 20rem
+        
+
+    .table-heading-price
+        width: 16rem
+
+    .table-heading-volume
+        width: 20rem
+
+    .table-heading-div
+        font-size: 1.4rem
+        font-weight: 500
+        padding: 6px 18px
+        text-align: left
+    
+    .body-row-des
+        padding: 18px 24px
+        .coin-row
+            padding: 0px 18px
+
+        .coin-no, .coin-vol, .coin-market
+            font-size: 1.6rem
+            color: #444
+
+        .coin-name 
+            font-size: 1.8rem
+        .coin-price
+            font-size: 1.8rem
+            color: #690058
+        .coin-change
+            font-size: 2rem
+            color: #008000
+table
+    border-collapse: collapse
+
+    .body-row
+        border-top: 1px solid #999
+        width: 100%
+        transition: all 200ms linear
+        &:hover
+            background-color: #DAC2FD 

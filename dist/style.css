@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+header .logo-div img {
+  height: 60px;
+}
+header .h-btn-div button {
+  background-color: #8338EC;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1450980392);
+  transition: all 200ms ease-in;
+}
+header .h-btn-div button ion-icon {
+  color: #fff;
+  font-size: 3.2rem;
+}
+header .h-btn-div button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1450980392);
+}
+
+.main-area {
+  display: flex;
+}
+.main-area .menu-bar {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.1254901961);
+  height: 86vh;
+  position: fixed;
+  flex: 0 1 auto;
+}
+.main-area .menu-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-10%);
+  gap: 4rem;
+}
+.main-area .menu-bar ul li ion-icon {
+  font-size: 2.3rem;
+  display: flex;
+}
+.main-area .menu-bar .inf {
+  position: absolute;
+  bottom: 2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #8338EC;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-area .menu-bar .inf ion-icon {
+  font-size: 2.4rem;
+  color: #fff;
+}
+.main-area .content-div {
+  width: calc(100% - 80px);
+  margin-left: 80px;
+  scroll: auto;
+}
+.main-area .content-div .main-headline {
+  margin-left: 16rem;
+  padding-top: 8rem;
+  position: fixed;
+}
+.main-area .content-div .main-headline h1 {
+  font-size: 4.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.main-area .content-div .main-headline p {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.crypto-coins {
+  width: 200px;
+  position: fixed;
+  top: 18%;
+  left: 48%;
+}
+
+.crypto-3d {
+  height: 46rem;
+  position: absolute;
+  right: 11rem;
+  top: 2.6rem;
+  z-index: 1001;
+}
+
+.table-div {
+  background-color: #f0e7fc;
+  border-radius: 22px;
+  height: 1200px;
+  z-index: 1000;
+  position: relative;
+  margin-top: 36rem;
+}
+.table-div .t-heading {
+  padding: 12px 24px;
+}
+.table-div .table-heading-name {
+  width: 20rem;
+}
+.table-div .table-heading-price {
+  width: 16rem;
+}
+.table-div .table-heading-volume {
+  width: 20rem;
+}
+.table-div .table-heading-div {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 6px 18px;
+  text-align: left;
+}
+.table-div .body-row-des {
+  padding: 18px 24px;
+}
+.table-div .body-row-des .coin-row {
+  padding: 0px 18px;
+}
+.table-div .body-row-des .coin-no, .table-div .body-row-des .coin-vol, .table-div .body-row-des .coin-market {
+  font-size: 1.6rem;
+  color: #444;
+}
+.table-div .body-row-des .coin-name {
+  font-size: 1.8rem;
+}
+.table-div .body-row-des .coin-price {
+  font-size: 1.8rem;
+  color: #690058;
+}
+.table-div .body-row-des .coin-change {
+  font-size: 2rem;
+  color: #008000;
+}
+
+table {
+  border-collapse: collapse;
+}
+table .body-row {
+  border-top: 1px solid #999;
+  width: 100%;
+  transition: all 200ms linear;
+}
+table .body-row:hover {
+  background-color: #DAC2FD;
+}
+
+/*# sourceMappingURL=style.css.map */
