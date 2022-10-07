@@ -303,7 +303,7 @@ table .body-row:hover {
     width: 40px;
   }
   .menu-bar li ion-icon {
-    font-size: 2.6rem !important;
+    font-size: 3rem !important;
   }
   .menu-bar .inf {
     height: 25px;
@@ -322,13 +322,13 @@ table .body-row:hover {
     left: 72%;
   }
 }
-@media screen and (max-width: 22.5rem) {
+@media screen and (max-width: 23.5rem) {
   .crypto-coins {
-    left: 76%;
-    top: 11%;
+    left: 75%;
+    top: 13%;
   }
   .crypto-3d {
-    top: 54%;
+    top: 60%;
     left: 46rem !important;
   }
   .logo-div img {
@@ -336,6 +336,14 @@ table .body-row:hover {
   }
   .h-btn-div button {
     padding: 4px !important;
+  }
+}
+@media screen and (max-width: 22.5rem) {
+  .crypto-coins {
+    top: 12%;
+  }
+  .crypto-3d {
+    top: 56%;
   }
 }
 
