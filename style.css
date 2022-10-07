@@ -75,14 +75,16 @@ header .h-btn-div button:hover {
   color: #fff;
 }
 .main-area .content-div {
-  width: calc(100% - 80px);
-  margin-left: 80px;
+  width: calc(100% - 120px);
+  height: 100%;
+  margin-left: 100px;
   scroll: auto;
 }
 .main-area .content-div .main-headline {
-  margin-left: 16rem;
+  margin-left: 14rem;
   padding-top: 8rem;
   position: fixed;
+  z-index: 0;
 }
 .main-area .content-div .main-headline h1 {
   font-size: 4.8rem;
@@ -98,7 +100,7 @@ header .h-btn-div button:hover {
 .crypto-coins {
   width: 200px;
   position: fixed;
-  top: 18%;
+  top: 14%;
   left: 48%;
 }
 
@@ -113,7 +115,7 @@ header .h-btn-div button:hover {
 .table-div {
   background-color: #f0e7fc;
   border-radius: 22px;
-  height: 1200px;
+  margin-bottom: 40px;
   z-index: 1000;
   position: relative;
   margin-top: 36rem;
@@ -122,13 +124,13 @@ header .h-btn-div button:hover {
   padding: 12px 24px;
 }
 .table-div .table-heading-name {
-  width: 20rem;
-}
-.table-div .table-heading-price {
   width: 16rem;
 }
+.table-div .table-heading-price {
+  width: 14rem;
+}
 .table-div .table-heading-volume {
-  width: 20rem;
+  width: 16rem;
 }
 .table-div .table-heading-div {
   font-size: 1.4rem;
@@ -137,7 +139,7 @@ header .h-btn-div button:hover {
   text-align: left;
 }
 .table-div .body-row-des {
-  padding: 18px 24px;
+  padding: 18px 21.6px;
 }
 .table-div .body-row-des .coin-row {
   padding: 0px 18px;
@@ -155,7 +157,6 @@ header .h-btn-div button:hover {
 }
 .table-div .body-row-des .coin-change {
   font-size: 2rem;
-  color: #008000;
 }
 
 table {
@@ -163,11 +164,179 @@ table {
 }
 table .body-row {
   border-top: 1px solid #999;
-  width: 100%;
   transition: all 200ms linear;
 }
 table .body-row:hover {
   background-color: #DAC2FD;
+  cursor: pointer;
+}
+
+.coin-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.coin-row .coin-icon img {
+  width: 40px;
+}
+.coin-row .name {
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.green-trend {
+  color: #008000;
+}
+
+.red-trend {
+  color: #9a031e;
+}
+
+/* Media queries for making it mobile responsive */
+@media screen and (max-width: 68rem) {
+  * {
+    font-size: 9px;
+  }
+  .crypto-coins {
+    left: 52%;
+    top: 16%;
+    width: 160px;
+  }
+  .crypto-3d {
+    top: 3rem;
+    height: 44rem;
+    right: 8rem;
+  }
+}
+@media screen and (max-width: 54rem) {
+  * {
+    font-size: 8px;
+  }
+  .main-headline {
+    margin-left: 2rem !important;
+    padding-top: 5rem;
+  }
+  .main-headline h1 {
+    font-size: 3.6rem !important;
+  }
+  .crypto-coins {
+    width: 140px;
+    top: 8%;
+    left: 48%;
+    letter-spacing: 0;
+  }
+  .logo-div img {
+    height: 50px;
+  }
+  .h-btn-div button {
+    padding: 8px 8px;
+  }
+  .crypto-3d {
+    height: 42rem;
+    right: 6rem;
+    top: 8rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .crypto-3d {
+    right: 0rem;
+    height: 38rem;
+    top: 10rem;
+  }
+  .crypto-coins {
+    top: 10%;
+  }
+  .menu-bar {
+    Width: 60px !important;
+  }
+  .content-div {
+    width: calc(100% - 100px);
+    margin-left: 90px !important;
+  }
+}
+@media screen and (max-width: 38rem) {
+  * {
+    font-size: 6px;
+  }
+  .crypto-coins {
+    width: 80px;
+    top: 16%;
+    left: 56%;
+  }
+  .table-div {
+    margin-top: 72rem !important;
+  }
+  .crypto-3d {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 46rem;
+  }
+  .logo-div img {
+    height: 40px !important;
+  }
+  .h-btn-div button {
+    padding: 6px;
+  }
+  ion-icon {
+    font-size: 4.8rem !important;
+  }
+  .crypto-coins {
+    top: 14%;
+  }
+}
+@media screen and (max-width: 26.75rem) {
+  .crypto-coins {
+    left: 68%;
+    top: 10%;
+  }
+  .crypto-3d {
+    top: 45%;
+    left: 50rem !important;
+  }
+  .table-div {
+    margin-top: 78rem !important;
+    width: 120% !important;
+    margin-left: -10% !important;
+  }
+  .menu-bar {
+    width: 40px;
+  }
+  .menu-bar li ion-icon {
+    font-size: 2.6rem !important;
+  }
+  .menu-bar .inf {
+    height: 25px;
+    width: 25px;
+  }
+  .menu-bar .inf ion-icon {
+    font-size: 3rem !important;
+  }
+}
+@media screen and (max-width: 24.5rem) {
+  .crypto-3d {
+    top: 50%;
+  }
+  .crypto-coins {
+    top: 12%;
+    left: 72%;
+  }
+}
+@media screen and (max-width: 22.5rem) {
+  .crypto-coins {
+    left: 76%;
+    top: 11%;
+  }
+  .crypto-3d {
+    top: 54%;
+    left: 46rem !important;
+  }
+  .logo-div img {
+    height: 30px !important;
+  }
+  .h-btn-div button {
+    padding: 4px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
